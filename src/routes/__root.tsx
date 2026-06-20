@@ -85,10 +85,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "PentaFit" },
       { name: "theme-color", content: "#0F172A" },
       { property: "og:title", content: "PentaFit — Personalized Fitness & Nutrition Coaching" },
-      { property: "og:description", content: "Personalized workout & nutrition coaching, progress tracking and accountability — built to engineer real transformations." },
+      { property: "og:description", content: "Transform your body with PentaFit's personalized workout plans, nutrition coaching, progress tracking and 1:1 accountability. Download the app today." },
       { property: "og:site_name", content: "PentaFit" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "PentaFit — Personalized Fitness & Nutrition Coaching" },
+      { name: "twitter:description", content: "Transform your body with PentaFit's personalized workout plans, nutrition coaching, progress tracking and 1:1 accountability. Download the app today." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a35eb575-bc1b-4239-bc20-7f39283035ba/id-preview-b0779b9b--3fc3375f-f596-4495-b2c2-bd673291fe82.lovable.app-1781928784915.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a35eb575-bc1b-4239-bc20-7f39283035ba/id-preview-b0779b9b--3fc3375f-f596-4495-b2c2-bd673291fe82.lovable.app-1781928784915.png" },
     ],
     links: [
       {
