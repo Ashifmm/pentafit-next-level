@@ -1,12 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { Phone, MessageCircle, Download, Check, Star, Apple, Smartphone, Dumbbell, Salad, LineChart, HeartPulse, Users, Bell, Activity, Footprints, Trophy, ArrowRight, ShieldCheck } from "lucide-react";
-import heroImg from "@/assets/hero-main.jpg";
+import heroAsset from "@/assets/uploads/coach-hero.jpg.asset.json";
 import appMockup from "@/assets/app-mockup.jpg";
-import t1 from "@/assets/transformation-1.png";
-import t2 from "@/assets/transformation-2.png";
-import t3 from "@/assets/transformation-3.png";
-import coach from "@/assets/coach-founder.jpg";
+import story1 from "@/assets/uploads/story-1.jpg.asset.json";
+import story2 from "@/assets/uploads/story-2.jpg.asset.json";
+import story4 from "@/assets/uploads/story-4.jpg.asset.json";
+const heroImg = heroAsset.url;
+const coach = heroAsset.url;
+const t1 = story1.url;
+const t2 = story4.url;
+const t3 = story2.url;
 import { TEL, WHATSAPP_URL, PLAY_STORE, APP_STORE } from "@/components/site/constants";
 import { Reveal, Counter } from "@/components/site/Reveal";
 import { CtaBand } from "@/components/site/CtaBand";
@@ -303,14 +307,14 @@ function Transformations() {
 
 function Coaches() {
   const list = [
-    { name: "Richard George", role: "Founder · Head Coach", cred: ["K11 Certified Professional", "Advanced Sports Nutritionist", "GLP-1 Certified Expert"], img: coach },
+    { name: "Richard George", role: "Founder · Head Coach", cred: ["Professional Fitness Coach Since 2016", "5+ Years Expert Consultant at HealthifyMe", "K11 Certified · Advanced Sports Nutritionist"], img: coach },
   ];
   return (
     <section className="bg-surface">
       <div className="container-prose py-24">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-dark">Meet your coach</p>
-          <h2 className="mt-3 text-3xl md:text-5xl font-extrabold font-display tracking-tight">Strategic leadership behind every plan</h2>
+          <h2 className="mt-3 text-3xl md:text-5xl font-extrabold font-display tracking-tight">Coached by a transformation specialist since 2016</h2>
         </Reveal>
         <div className="mt-12 grid lg:grid-cols-2 gap-8 items-center">
           {list.map((c) => (
@@ -321,17 +325,19 @@ function Coaches() {
             </Reveal>
           ))}
           <Reveal delay={120}>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-dark">Strategic Leadership</p>
-            <h3 className="mt-3 text-4xl md:text-5xl font-extrabold font-display">Richard <span className="text-brand-dark">George</span></h3>
-            <p className="mt-5 text-lg text-muted-foreground italic">"My mission is to engineer bodies that serve your lifestyle, not consume it. We build elite machines for the modern world."</p>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-dark">Founder & Head Coach</p>
+            <h3 className="mt-3 text-4xl md:text-5xl font-extrabold font-display">Richard (Ashish) <span className="text-brand-dark">George</span></h3>
+            <p className="mt-2 text-sm font-semibold text-foreground/80">Fitness Expert & Transformation Specialist | Founder of PentaFit</p>
+            <p className="mt-5 text-lg text-muted-foreground italic">"I believe that true transformation is not just about physical change—it's about mastering the science of your own body."</p>
             <div className="mt-6 grid gap-2">
-              {["K11 Certified Professional", "Advanced Sports Nutritionist", "GLP-1 Certified Expert"].map((c) => (
+              {["Professional Fitness Coach Since 2016", "5+ Years Expert Consultant at HealthifyMe", "K11 Certified · Advanced Sports Nutritionist", "GLP-1 & Metabolic Health Specialist", "State-Level Bodybuilding Coach"].map((c) => (
                 <div key={c} className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 hover-lift">
                   <span className="h-2 w-2 rounded-full bg-brand" />
                   <span className="font-semibold">{c}</span>
                 </div>
               ))}
             </div>
+            <div className="mt-6"><Link to="/about" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-3 font-semibold hover:opacity-90 transition">Read full profile</Link></div>
           </Reveal>
         </div>
       </div>

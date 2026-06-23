@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, MessageCircle, Mail, MapPin, Instagram, Facebook, Youtube } from "lucide-react";
-import { NAV, TEL, WHATSAPP_URL, PHONE_DISPLAY, EMAIL, PLAY_STORE, APP_STORE } from "./constants";
+import { Phone, MessageCircle, Mail, MapPin, Instagram, Youtube } from "lucide-react";
+import { NAV, TEL, WHATSAPP_URL, PHONE_DISPLAY, EMAIL, PLAY_STORE, APP_STORE, INSTAGRAM_URL, YOUTUBE_URL } from "./constants";
 
 export function Footer() {
   return (
@@ -15,9 +15,8 @@ export function Footer() {
             A premium fitness transformation ecosystem — personalized coaching, nutrition, and tracking, engineered for real results.
           </p>
           <div className="mt-5 flex gap-3">
-            <a href="#" className="rounded-full bg-white/10 p-2 hover:bg-brand transition" aria-label="Instagram"><Instagram className="h-4 w-4" /></a>
-            <a href="#" className="rounded-full bg-white/10 p-2 hover:bg-brand transition" aria-label="Facebook"><Facebook className="h-4 w-4" /></a>
-            <a href="#" className="rounded-full bg-white/10 p-2 hover:bg-brand transition" aria-label="YouTube"><Youtube className="h-4 w-4" /></a>
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="rounded-full bg-white/10 p-2 hover:bg-brand transition" aria-label="PentaFit on Instagram"><Instagram className="h-4 w-4" /></a>
+            <a href={YOUTUBE_URL} target="_blank" rel="noreferrer" className="rounded-full bg-white/10 p-2 hover:bg-brand transition" aria-label="PentaFit on YouTube"><Youtube className="h-4 w-4" /></a>
           </div>
         </div>
 

@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MessageCircle, Download, ChevronDown } from "lucide-react";
 import { NAV, TEL, PHONE_DISPLAY, WHATSAPP_URL, PLAY_STORE, APP_STORE } from "./constants";
+import { SocialLinks } from "./SocialLinks";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -41,6 +42,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-2">
+          <SocialLinks variant="ghost" className="mr-1" />
           <a href={TEL} className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-semibold hover:border-brand transition-colors">
             <Phone className="h-4 w-4 text-brand-dark" /> Call
           </a>
@@ -92,6 +94,7 @@ export function Header() {
               </a>
             </div>
             <a href={`tel:${PHONE_DISPLAY}`} className="sr-only">{PHONE_DISPLAY}</a>
+            <div className="mt-3 flex justify-center"><SocialLinks /></div>
           </div>
         </div>
       )}
