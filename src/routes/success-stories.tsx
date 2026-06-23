@@ -94,7 +94,7 @@ function SuccessPage() {
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-[100] bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
+          className="fixed inset-0 z-[100] bg-black/85 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={() => setOpen(null)}
         >
           <button
