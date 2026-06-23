@@ -94,6 +94,7 @@ export function Header() {
               </a>
             </div>
             <a href={`tel:${PHONE_DISPLAY}`} className="sr-only">{PHONE_DISPLAY}</a>
+            <div className="mt-3 flex justify-center"><SocialLinks /></div>
           </div>
         </div>
       )}
