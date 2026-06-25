@@ -54,7 +54,6 @@ function Index() {
       <AppShowcase />
       <Transformations />
       <Coaches />
-      <Pricing />
       <Testimonials />
       <FAQ />
       <CtaBand />

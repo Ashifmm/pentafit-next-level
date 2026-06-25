@@ -31,7 +31,6 @@ export const NAV = [
   { to: "/services", label: "Services" },
   { to: "/programs", label: "Programs" },
   { to: "/success-stories", label: "Success Stories" },
-  { to: "/pricing", label: "Pricing" },
   { to: "/blog", label: "Blog" },
   { to: "/faq", label: "FAQ" },
   { to: "/contact", label: "Contact" },

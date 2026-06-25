@@ -15,7 +15,6 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ProgramsRouteImport } from './routes/programs'
 import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BlogRouteImport } from './routes/blog'
@@ -52,11 +51,6 @@ const PrivacyRoute = PrivacyRouteImport.update({
   path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PricingRoute = PricingRouteImport.update({
-  id: '/pricing',
-  path: '/pricing',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const FaqRoute = FaqRouteImport.update({
   id: '/faq',
   path: '/faq',
@@ -89,7 +83,6 @@ export interface FileRoutesByFullPath {
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
-  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/programs': typeof ProgramsRoute
   '/services': typeof ServicesRoute
@@ -103,7 +96,6 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
-  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/programs': typeof ProgramsRoute
   '/services': typeof ServicesRoute
@@ -118,7 +110,6 @@ export interface FileRoutesById {
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
-  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/programs': typeof ProgramsRoute
   '/services': typeof ServicesRoute
@@ -134,7 +125,6 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/faq'
-    | '/pricing'
     | '/privacy'
     | '/programs'
     | '/services'
@@ -148,7 +138,6 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/faq'
-    | '/pricing'
     | '/privacy'
     | '/programs'
     | '/services'
@@ -162,7 +151,6 @@ export interface FileRouteTypes {
     | '/blog'
     | '/contact'
     | '/faq'
-    | '/pricing'
     | '/privacy'
     | '/programs'
     | '/services'
@@ -177,7 +165,6 @@ export interface RootRouteChildren {
   BlogRoute: typeof BlogRoute
   ContactRoute: typeof ContactRoute
   FaqRoute: typeof FaqRoute
-  PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   ProgramsRoute: typeof ProgramsRoute
   ServicesRoute: typeof ServicesRoute
@@ -230,13 +217,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/pricing': {
-      id: '/pricing'
-      path: '/pricing'
-      fullPath: '/pricing'
-      preLoaderRoute: typeof PricingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/faq': {
       id: '/faq'
       path: '/faq'
@@ -281,7 +261,6 @@ const rootRouteChildren: RootRouteChildren = {
   BlogRoute: BlogRoute,
   ContactRoute: ContactRoute,
   FaqRoute: FaqRoute,
-  PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   ProgramsRoute: ProgramsRoute,
   ServicesRoute: ServicesRoute,
@@ -292,13 +271,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
