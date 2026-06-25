@@ -27,9 +27,9 @@ function PrivacyPage() {
         <h2 className="text-2xl font-bold mt-8">How we use it</h2>
         <p className="mt-3 text-muted-foreground">To deliver personalized coaching, communicate with you, improve our services, and comply with legal obligations. We never sell your data.</p>
         <h2 className="text-2xl font-bold mt-8">Your rights</h2>
-        <p className="mt-3 text-muted-foreground">You can request access, correction or deletion of your data anytime by emailing hello@pentafit.app.</p>
+        <p className="mt-3 text-muted-foreground">You can request access, correction or deletion of your data anytime by emailing <a className="text-brand" href="mailto:richad.george@gmail.com">richad.george@gmail.com</a>.</p>
         <h2 className="text-2xl font-bold mt-8">Contact</h2>
-        <p className="mt-3 text-muted-foreground">For privacy questions, email hello@pentafit.app or call +91 90745 83726.</p>
+        <p className="mt-3 text-muted-foreground">For privacy questions, email <a className="text-brand" href="mailto:richad.george@gmail.com">richad.george@gmail.com</a> or call +91 90745 83726.</p>
       </section>
     </>
   );
