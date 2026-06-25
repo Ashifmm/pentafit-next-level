@@ -57,55 +57,55 @@
 
 :root {
   --radius: 0.875rem;
-  /* Slate 900 #0F172A */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.21 0.034 264.7);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.21 0.034 264.7);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.21 0.034 264.7);
-  --primary: oklch(0.21 0.034 264.7);
-  --primary-foreground: oklch(0.99 0.005 247);
-  --secondary: oklch(0.97 0.01 247.9);
-  --secondary-foreground: oklch(0.21 0.034 264.7);
-  --muted: oklch(0.97 0.01 247.9);
-  --muted-foreground: oklch(0.5 0.03 257);
-  --accent: oklch(0.97 0.01 247.9);
-  --accent-foreground: oklch(0.21 0.034 264.7);
-  --destructive: oklch(0.58 0.24 27);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.92 0.013 255.5);
-  --input: oklch(0.92 0.013 255.5);
-  --ring: oklch(0.62 0.22 22);
+  /* Premium Dark Fitness Theme — Black / Red / White */
+  --background: oklch(0 0 0);                 /* #000000 */
+  --foreground: oklch(1 0 0);                 /* #FFFFFF */
+  --card: oklch(0.165 0 0);                   /* #161616 */
+  --card-foreground: oklch(1 0 0);
+  --popover: oklch(0.165 0 0);
+  --popover-foreground: oklch(1 0 0);
+  --primary: oklch(0.07 0 0);                 /* near-black for buttons/footer */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.165 0 0);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.165 0 0);
+  --muted-foreground: oklch(0.72 0.01 286);   /* #A1A1AA */
+  --accent: oklch(0.2 0 0);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.3);     /* #DC2626 */
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.245 0 0);                 /* #262626 */
+  --input: oklch(0.245 0 0);
+  --ring: oklch(0.577 0.245 27.3);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.98 0.003 247);
-  --sidebar-foreground: oklch(0.21 0.034 264.7);
-  --sidebar-primary: oklch(0.21 0.034 264.7);
-  --sidebar-primary-foreground: oklch(0.99 0.005 247);
-  --sidebar-accent: oklch(0.97 0.01 247.9);
-  --sidebar-accent-foreground: oklch(0.21 0.034 264.7);
-  --sidebar-border: oklch(0.92 0.013 255.5);
-  --sidebar-ring: oklch(0.62 0.22 22);
+  --sidebar: oklch(0.07 0 0);
+  --sidebar-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.577 0.245 27.3);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.165 0 0);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.245 0 0);
+  --sidebar-ring: oklch(0.577 0.245 27.3);
 
-  /* Brand tokens — PentaFit Red */
-  --brand: oklch(0.62 0.22 22);            /* #E11D48 */
-  --brand-foreground: oklch(0.99 0.005 247);
-  --brand-dark: oklch(0.56 0.22 24);       /* #DC2626 */
+  /* Brand tokens — PentaFit Red on Dark */
+  --brand: oklch(0.577 0.245 27.3);          /* #DC2626 */
+  --brand-foreground: oklch(1 0 0);
+  --brand-dark: oklch(0.637 0.237 25.3);     /* #EF4444 — brighter for use as accent text on black */
   --success: oklch(0.72 0.17 153);
-  --surface: oklch(0.98 0.005 248);         /* #F8FAFC */
-  --surface-strong: oklch(0.16 0.02 264);
+  --surface: oklch(0.04 0 0);                /* #0A0A0A — section bg */
+  --surface-strong: oklch(0.105 0 0);        /* #111111 */
 
-  --gradient-brand: linear-gradient(135deg, oklch(0.62 0.22 22) 0%, oklch(0.54 0.23 25) 100%);
-  --gradient-dark: linear-gradient(135deg, oklch(0.18 0.02 264) 0%, oklch(0.10 0.015 264) 100%);
-  --gradient-hero: linear-gradient(135deg, rgba(17,24,39,0.88) 0%, rgba(17,24,39,0.55) 55%, rgba(225,29,72,0.45) 100%);
+  --gradient-brand: linear-gradient(135deg, #EF4444 0%, #DC2626 50%, #B91C1C 100%);
+  --gradient-dark: linear-gradient(135deg, #0A0A0A 0%, #000000 60%, #111111 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(10,10,10,0.7) 55%, rgba(220,38,38,0.45) 100%);
 
-  --shadow-soft: 0 1px 2px rgba(17,24,39,0.05), 0 8px 24px -8px rgba(17,24,39,0.08);
-  --shadow-card: 0 4px 12px -2px rgba(17,24,39,0.08), 0 16px 48px -16px rgba(17,24,39,0.15);
-  --shadow-glow: 0 12px 40px -8px rgba(225,29,72,0.5);
+  --shadow-soft: 0 1px 2px rgba(0,0,0,0.6), 0 8px 24px -8px rgba(0,0,0,0.7);
+  --shadow-card: 0 4px 12px -2px rgba(0,0,0,0.6), 0 24px 60px -20px rgba(220,38,38,0.18);
+  --shadow-glow: 0 12px 40px -8px rgba(220,38,38,0.65);
 }
 
 .dark {
