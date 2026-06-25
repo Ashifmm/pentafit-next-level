@@ -64,12 +64,12 @@
   --card-foreground: oklch(1 0 0);
   --popover: oklch(0.165 0 0);
   --popover-foreground: oklch(1 0 0);
-  --primary: oklch(0.07 0 0);                 /* near-black for buttons/footer */
+  --primary: oklch(0.577 0.245 27.3);         /* #DC2626 — primary buttons are brand red on dark */
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.165 0 0);
   --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.165 0 0);
-  --muted-foreground: oklch(0.72 0.01 286);   /* #A1A1AA */
+  --muted-foreground: oklch(0.84 0.005 286);  /* #D1D5DB — readable on black */
   --accent: oklch(0.2 0 0);
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.3);     /* #DC2626 */

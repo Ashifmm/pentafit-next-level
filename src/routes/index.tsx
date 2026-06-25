@@ -63,7 +63,7 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-primary text-primary-foreground">
+    <section className="relative overflow-hidden bg-black text-foreground">
       <div className="absolute inset-0">
         <img src={heroImg} alt="PentaFit transformation coaching" className="h-full w-full object-cover opacity-50" width={1600} height={1200} fetchPriority="high" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
@@ -83,14 +83,14 @@ function Hero() {
             <a href={TEL} className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 font-semibold text-brand-foreground hover:bg-brand-dark shadow-glow transition">
               <Phone className="h-5 w-5" /> Call Now
             </a>
-            <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white text-primary px-6 py-3.5 font-semibold hover:bg-surface transition">
+            <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white text-black px-6 py-3.5 font-semibold hover:bg-white/90 transition">
               <MessageCircle className="h-5 w-5" /> WhatsApp Now
             </a>
             <a href={PLAY_STORE} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3.5 font-semibold hover:bg-white/10 transition">
               <Download className="h-5 w-5" /> Download App
             </a>
           </div>
-          <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-primary-foreground/80">
+          <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-foreground/85">
             <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-brand" /> Certified Coaches</div>
             <div className="flex items-center gap-2"><Star className="h-4 w-4 text-brand fill-brand" /> 4.9/5 from 412+ clients</div>
             <div className="flex items-center gap-2"><Trophy className="h-4 w-4 text-brand" /> 1,200+ transformations</div>
@@ -98,7 +98,7 @@ function Hero() {
         </div>
         <div className="lg:col-span-5 relative">
           <div className="relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md p-5 shadow-card hover-lift">
-            <div className="flex items-center justify-between text-xs text-primary-foreground/70">
+            <div className="flex items-center justify-between text-xs text-foreground/75">
               <span>Live Progress</span>
               <span className="rounded-full bg-brand/20 text-brand px-2 py-0.5">Week 8</span>
             </div>
@@ -110,7 +110,7 @@ function Hero() {
               ].map((s) => (
                 <div key={s.l} className="rounded-xl bg-white/5 p-3">
                   <div className="text-2xl font-bold text-brand">{s.v}</div>
-                  <div className="text-[11px] uppercase tracking-wider text-primary-foreground/60">{s.l}</div>
+                  <div className="text-[11px] uppercase tracking-wider text-foreground/70">{s.l}</div>
                 </div>
               ))}
             </div>
@@ -119,7 +119,7 @@ function Hero() {
             </div>
             <div className="mt-4 flex items-center gap-3 text-sm">
               <div className="h-8 w-8 rounded-full bg-brand/30 grid place-items-center"><HeartPulse className="h-4 w-4 text-brand" /></div>
-              <span className="text-primary-foreground/80">Plan adapted by your coach this week</span>
+              <span className="text-foreground/85">Plan adapted by your coach this week</span>
             </div>
           </div>
           <div className="absolute -bottom-6 -left-6 rounded-2xl bg-brand text-brand-foreground p-4 shadow-card animate-float">
@@ -144,10 +144,10 @@ function SocialProof() {
       <div className="container-prose py-14 grid grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((s) => (
           <Reveal key={s.l} className="text-center">
-            <div className="text-4xl lg:text-5xl font-extrabold font-display text-primary">
+            <div className="text-4xl lg:text-5xl font-extrabold font-display text-brand">
               <Counter to={s.n} suffix={s.s} />
             </div>
-            <div className="mt-2 text-sm font-medium text-muted-foreground">{s.l}</div>
+            <div className="mt-2 text-sm font-medium text-foreground/85">{s.l}</div>
           </Reveal>
         ))}
       </div>
@@ -234,14 +234,14 @@ function AppShowcase() {
     { i: Bell, t: "Smart Notifications" },
   ];
   return (
-    <section className="bg-primary text-primary-foreground overflow-hidden">
+    <section className="bg-black text-foreground overflow-hidden border-y border-border">
       <div className="container-prose py-24 grid lg:grid-cols-2 gap-16 items-center">
         <Reveal className="order-2 lg:order-1">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand">The PentaFit App</p>
           <h2 className="mt-3 text-3xl md:text-5xl font-extrabold font-display tracking-tight">
             Your coach, plan and progress — <span className="text-brand">in your pocket</span>
           </h2>
-          <p className="mt-5 text-primary-foreground/75 text-lg">
+          <p className="mt-5 text-foreground/80 text-lg">
             One app for everything. Log meals in seconds, follow your workouts, watch your progress chart climb, and message your coach without missing a beat.
           </p>
           <div className="mt-8 grid grid-cols-2 gap-3">
@@ -253,7 +253,7 @@ function AppShowcase() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={PLAY_STORE} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white text-primary px-5 py-3 font-semibold hover:bg-surface transition">
+            <a href={PLAY_STORE} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white text-black px-5 py-3 font-semibold hover:bg-white/90 transition">
               <Smartphone className="h-5 w-5" /> Get on Play Store
             </a>
             <a href={APP_STORE} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-white/30 px-5 py-3 font-semibold hover:bg-white/10 transition">
