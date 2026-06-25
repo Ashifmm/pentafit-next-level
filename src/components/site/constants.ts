@@ -4,7 +4,7 @@ export const TEL = `tel:${PHONE}`;
 export const WHATSAPP_URL = `https://wa.me/919074583726?text=${encodeURIComponent("Hi PentaFit, I'd like to know more about your coaching programs.")}`;
 export const PLAY_STORE = "https://play.google.com/store/apps/details?id=com.app.pentafit";
 export const APP_STORE = "https://apps.apple.com/in/app/pentafit/id6757516669";
-export const EMAIL = "hello@pentafit.app";
+export const EMAIL = "richad.george@gmail.com";
 
 export const INSTAGRAM_URL = "https://www.instagram.com/pentafitbyrichard";
 export const YOUTUBE_URL = "https://youtube.com/@pentafitbyrichard13";

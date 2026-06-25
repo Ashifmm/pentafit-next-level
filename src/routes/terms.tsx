@@ -31,7 +31,7 @@ function TermsPage() {
         <h2 className="text-2xl font-bold mt-8">5. Intellectual property</h2>
         <p className="mt-3 text-muted-foreground">All content, plans and materials provided by PentaFit are for your personal use only and may not be redistributed.</p>
         <h2 className="text-2xl font-bold mt-8">6. Contact</h2>
-        <p className="mt-3 text-muted-foreground">Questions? Email hello@pentafit.app or call +91 90745 83726.</p>
+        <p className="mt-3 text-muted-foreground">Questions? Email <a className="text-brand" href="mailto:richad.george@gmail.com">richad.george@gmail.com</a> or call +91 90745 83726.</p>
       </section>
     </>
   );
