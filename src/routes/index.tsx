@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
-import { Phone, MessageCircle, Download, Check, Star, Apple, Smartphone, Dumbbell, Salad, LineChart, HeartPulse, Users, Bell, Activity, Footprints, Trophy, ArrowRight, ShieldCheck } from "lucide-react";
+import { Phone, MessageCircle, Download, Star, Apple, Smartphone, Dumbbell, Salad, LineChart, HeartPulse, Users, Bell, Activity, Footprints, Trophy, ArrowRight, ShieldCheck } from "lucide-react";
 import heroAsset from "@/assets/uploads/coach-hero.jpg.asset.json";
 import appMockup from "@/assets/app-mockup.jpg";
 import story1 from "@/assets/uploads/story-1.jpg.asset.json";
