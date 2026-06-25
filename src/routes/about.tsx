@@ -184,7 +184,7 @@ function AboutPage() {
       {/* Founder message */}
       <section className="container-prose py-20">
         <Reveal>
-          <div className="rounded-3xl bg-gradient-dark text-primary-foreground p-10 md:p-14 text-center shadow-card">
+          <div className="rounded-3xl bg-gradient-dark text-foreground p-10 md:p-14 text-center shadow-card border border-border">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand">Founder's Message</p>
             <p className="mt-5 text-2xl md:text-3xl font-display font-extrabold leading-snug max-w-3xl mx-auto">
               "I don't just give you a plan; I empower you with the knowledge to maintain your results for a lifetime. Let's build the best version of you together."
