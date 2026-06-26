@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { CtaBand, PageHero } from "@/components/site/CtaBand";
-import coachAsset from "@/assets/uploads/coach-hero.jpg.asset.json";
+import coachAsset from "@/assets/uploads/coach-hero.jpg";
 import { SocialLinks } from "@/components/site/SocialLinks";
 import {
   Target, Eye, HeartPulse, Trophy, Award, Dumbbell, Activity, HeartHandshake,
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About PentaFit — Founder Richard George" },
       { property: "og:description", content: "Founder Richard George — transformation specialist coaching since 2016. K11 certified, GLP-1 specialist, ex-HealthifyMe consultant." },
       { property: "og:url", content: "/about" },
-      { property: "og:image", content: coachAsset.url },
+      { property: "og:image", content: coachAsset },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
@@ -69,7 +69,7 @@ function AboutPage() {
       <section className="container-prose py-20 grid lg:grid-cols-2 gap-12 items-center">
         <Reveal className="hover-zoom rounded-3xl overflow-hidden border border-border shadow-card">
           <img
-            src={coachAsset.url}
+            src={coachAsset}
             alt="Richard George — Founder & Head Coach, PentaFit"
             className="w-full h-[560px] object-cover"
             loading="eager"

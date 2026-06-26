@@ -4,15 +4,15 @@ import { Reveal } from "@/components/site/Reveal";
 import { CtaBand, PageHero } from "@/components/site/CtaBand";
 import { X, Quote } from "lucide-react";
 
-import s1 from "@/assets/uploads/story-1.jpg.asset.json";
-import s2 from "@/assets/uploads/story-2.jpg.asset.json";
-import s3 from "@/assets/uploads/story-3.jpg.asset.json";
-import s4 from "@/assets/uploads/story-4.jpg.asset.json";
-import s5 from "@/assets/uploads/story-5.jpg.asset.json";
-import s6 from "@/assets/uploads/story-6.jpg.asset.json";
-import s7 from "@/assets/uploads/story-7.jpg.asset.json";
-import s8 from "@/assets/uploads/story-8.jpg.asset.json";
-import s9 from "@/assets/uploads/story-9.jpg.asset.json";
+import s1 from "@/assets/uploads/story-1.jpg";
+import s2 from "@/assets/uploads/story-2.jpg";
+import s3 from "@/assets/uploads/story-3.jpg";
+import s4 from "@/assets/uploads/story-4.jpg";
+import s5 from "@/assets/uploads/story-5.jpg";
+import s6 from "@/assets/uploads/story-6.jpg";
+import s7 from "@/assets/uploads/story-7.jpg";
+import s8 from "@/assets/uploads/story-8.jpg";
+import s9 from "@/assets/uploads/story-9.jpg";
 
 export const Route = createFileRoute("/success-stories")({
   head: () => ({
@@ -29,15 +29,15 @@ export const Route = createFileRoute("/success-stories")({
 });
 
 const STORIES = [
-  { img: s1.url, tag: "Fat Loss & Recomp", caption: "Through consistent training, personalized nutrition guidance and disciplined lifestyle changes, this transformation demonstrates what's possible with the right coaching approach." },
-  { img: s2.url, tag: "Weight Loss Journey", caption: "A remarkable example of how dedication, expert guidance and a structured plan can rewrite the body composition story in months — not years." },
-  { img: s3.url, tag: "Strength & Tone", caption: "This fitness journey highlights the power of structured strength training, accountability and sustainable habits for long-term, visible results." },
-  { img: s4.url, tag: "Women's Wellness", caption: "Personalized coaching, hormone-aware programming and progressive nutrition turned long-standing plateaus into a sharper, stronger physique." },
-  { img: s5.url, tag: "Lifestyle Transformation", caption: "Smart programming combined with weekly check-ins and adaptive coaching led to a complete lifestyle reset — not just visible aesthetics." },
-  { img: s6.url, tag: "Confidence Rebuild", caption: "A real-world transformation built on adherence, mindset coaching and a plan designed around a real schedule — proof that consistency compounds." },
-  { img: s7.url, tag: "Sustainable Fat Loss", caption: "Structured training, dialed-in nutrition and unwavering accountability produced a sustainable fat-loss outcome with energy levels going up, not down." },
-  { img: s8.url, tag: "Body Recomposition", caption: "From metabolic restoration to dialed-in macros — a textbook example of evidence-based fat loss while preserving lean mass and strength." },
-  { img: s9.url, tag: "Health Transformation", caption: "Structured nutrition, progressive overload and disciplined habits combined to deliver a powerful long-term health transformation." },
+  { img: s1, tag: "Fat Loss & Recomp", caption: "Through consistent training, personalized nutrition guidance and disciplined lifestyle changes, this transformation demonstrates what's possible with the right coaching approach." },
+  { img: s2, tag: "Weight Loss Journey", caption: "A remarkable example of how dedication, expert guidance and a structured plan can rewrite the body composition story in months — not years." },
+  { img: s3, tag: "Strength & Tone", caption: "This fitness journey highlights the power of structured strength training, accountability and sustainable habits for long-term, visible results." },
+  { img: s4, tag: "Women's Wellness", caption: "Personalized coaching, hormone-aware programming and progressive nutrition turned long-standing plateaus into a sharper, stronger physique." },
+  { img: s5, tag: "Lifestyle Transformation", caption: "Smart programming combined with weekly check-ins and adaptive coaching led to a complete lifestyle reset — not just visible aesthetics." },
+  { img: s6, tag: "Confidence Rebuild", caption: "A real-world transformation built on adherence, mindset coaching and a plan designed around a real schedule — proof that consistency compounds." },
+  { img: s7, tag: "Sustainable Fat Loss", caption: "Structured training, dialed-in nutrition and unwavering accountability produced a sustainable fat-loss outcome with energy levels going up, not down." },
+  { img: s8, tag: "Body Recomposition", caption: "From metabolic restoration to dialed-in macros — a textbook example of evidence-based fat loss while preserving lean mass and strength." },
+  { img: s9, tag: "Health Transformation", caption: "Structured nutrition, progressive overload and disciplined habits combined to deliver a powerful long-term health transformation." },
 ];
 
 function SuccessPage() {
