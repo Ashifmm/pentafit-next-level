@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, MessageCircle, Mail, MapPin, Instagram, Youtube } from "lucide-react";
+import { Phone, MessageCircle, Mail, MapPin, Instagram, Youtube, Globe } from "lucide-react";
 import { NAV, TEL, WHATSAPP_URL, PHONE_DISPLAY, EMAIL, PLAY_STORE, APP_STORE, INSTAGRAM_URL, YOUTUBE_URL } from "./constants";
 
 export function Footer() {
@@ -54,6 +54,41 @@ export function Footer() {
         <div className="container-prose py-6 text-xs text-muted-foreground flex flex-wrap justify-between gap-2">
           <span>© {new Date().getFullYear()} PentaFit. All rights reserved.</span>
           <span>Engineered for transformation.</span>
+        </div>
+      </div>
+      <div className="border-t border-border bg-background">
+        <div className="container-prose flex flex-col items-center justify-between gap-3 py-5 text-center text-xs text-muted-foreground sm:flex-row sm:text-left lg:pr-40">
+          <p>
+            Designed by{" "}
+            <a
+              href="https://growthgrid-nine.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-foreground transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+            >
+              GrowthGrid
+            </a>
+          </p>
+          <address className="flex flex-col items-center gap-2 not-italic sm:flex-row sm:gap-5">
+            <a
+              href="https://growthgrid-nine.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+              aria-label="Visit the GrowthGrid website"
+            >
+              <Globe className="h-3.5 w-3.5" aria-hidden="true" />
+              growthgrid-nine.vercel.app
+            </a>
+            <a
+              href="tel:9958539886"
+              className="inline-flex items-center gap-1.5 transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+              aria-label="Call GrowthGrid at 9958539886"
+            >
+              <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+              9958539886
+            </a>
+          </address>
         </div>
       </div>
     </footer>
