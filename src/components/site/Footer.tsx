@@ -57,7 +57,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-border bg-background">
-        <div className="container-prose flex flex-col items-center justify-between gap-3 py-5 text-center text-xs text-muted-foreground sm:flex-row sm:text-left">
+        <div className="container-prose flex flex-col items-center justify-between gap-3 py-5 text-center text-xs text-muted-foreground sm:flex-row sm:text-left lg:pr-40">
           <p>
             Designed by{" "}
             <a
